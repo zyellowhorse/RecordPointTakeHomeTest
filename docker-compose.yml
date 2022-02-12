@@ -7,5 +7,5 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./content:/content
+      - ./content:/usr/share/nginx/html/
     
