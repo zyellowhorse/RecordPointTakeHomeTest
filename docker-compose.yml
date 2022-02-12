@@ -9,3 +9,10 @@ services:
     volumes:
       - ./content:/usr/share/nginx/html/
     
+  MySQL:
+    container_name: MySQL-Employees
+    image: genschsa/mysql-employees 
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: password
