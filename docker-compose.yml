@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  WebServer:
+    container_name: WebServer-Nginx
+    image: nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./content:/content
+    
